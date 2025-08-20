@@ -9,6 +9,7 @@ from airflow.utils.trigger_rule import TriggerRule
 
 with DAG(
     dag_id="latest_only_with_trigger",
+    dag_display_name="Latest Only with Trigger - Dash",
     schedule=datetime.timedelta(hours=4),
     start_date=pendulum.datetime(2021, 1, 1, tz="UTC"),
     catchup=False,

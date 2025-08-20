@@ -23,6 +23,7 @@ from airflow.providers.standard.operators.bash import BashOperator
 
 with DAG(
     dag_id="child_dag",
+    dag_display_name="Custom Child DAG",
     start_date=datetime(2022, 1, 1),
     schedule="@once",
     catchup=False,
